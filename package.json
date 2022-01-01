@@ -1,0 +1,20 @@
+{
+    "name": "rest-api-node-express",
+    "version": "1.0.0",
+    "description": "This is a CRUD API tutorial",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "start": "nodemon server.js"
+    },
+    "keywords": [],
+    "author": "Tamer Amer",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.2",
+        "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
