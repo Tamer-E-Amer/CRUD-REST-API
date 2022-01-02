@@ -21,7 +21,12 @@ In this Application I Utilize Node.js and express.js to build a REST API to  mak
 # get certain user in postman
 `127.0.0.1:8000/user/` and put a certain user id after `/`
 # delete certain user in postman
-`127.0.0.1:8000/user/` and put a certain user id after `/`
-
-
-
+`127.0.0.1:8000/user/` and put a certain user id after `/` and select the request type of delete
+# Updating certain user in postman
+`127.0.0.1:8000/user/` and put a certain user id after `/` and select the request type of patch
+and set the body of row option as the follow
+`{
+    "userName": "Johne" 
+}`
+this will update only the name
+**Important thing:** when you type the JSON object in the postman be sure that you put it in the body section of **row** and **JSON** selection
