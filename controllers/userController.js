@@ -55,10 +55,9 @@ export const updateUser = (req, res) => {
     // destruct the request body
     const { userName, position, age } = req.body;
     // test request.body varables
-    if (userName) user.userName = userName;
-    if (position) user.position = position;
-    if (age) user.age = age;
-
+    for (const key in req.body) {
+        if (req.body.hasOwnProperty(key)) user[key] = req.body[key];
+    }
     res.send(`User with id: ${id} hasbeen updated`);
 
 }
